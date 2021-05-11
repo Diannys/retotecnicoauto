@@ -17,9 +17,9 @@ public class FillOutForm implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.theValue("llenar campo de nombre").into(RegistrationForm.FIRST_NAME));
-        actor.attemptsTo(Enter.theValue("Escribe apellido").into(RegistrationForm.LAST_NAME));
-        actor.attemptsTo(Enter.theValue("dd@gmail.co").into(RegistrationForm.YOUR_EMAIL));
+        actor.attemptsTo(Enter.theValue("Diannys").into(RegistrationForm.FIRST_NAME));
+        actor.attemptsTo(Enter.theValue("Granadillo").into(RegistrationForm.LAST_NAME));
+        actor.attemptsTo(Enter.theValue("ddgranadillo@gmail.com").into(RegistrationForm.YOUR_EMAIL));
         actor.attemptsTo(
                 SelectFromOptions.byVisibleText("August").from(RegistrationForm.BIRTH_MONTH)
         );
@@ -29,9 +29,6 @@ public class FillOutForm implements Task {
         actor.attemptsTo(
                 SelectFromOptions.byVisibleText("1994").from(RegistrationForm.BIRTH_YEAR)
         );
-       actor.attemptsTo(Enter.theValue("Fonseca, La Guajira").into(RegistrationForm.lOCATION_CITY));
-
-       actor.attemptsTo(Enter.theValue("0000").into(RegistrationForm.POSTAL_CODE));
 
     }
 }

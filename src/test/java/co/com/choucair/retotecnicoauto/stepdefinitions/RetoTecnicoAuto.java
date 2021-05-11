@@ -1,16 +1,12 @@
 package co.com.choucair.retotecnicoauto.stepdefinitions;
 
-import co.com.choucair.retotecnicoauto.tasks.ClickJoinToday;
-import co.com.choucair.retotecnicoauto.tasks.ClickNextLocation;
-import co.com.choucair.retotecnicoauto.tasks.FillOutForm;
-import co.com.choucair.retotecnicoauto.tasks.OpenUp;
+import co.com.choucair.retotecnicoauto.tasks.*;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import org.fluentlenium.core.search.Search;
 
 public class RetoTecnicoAuto {
     @Before
@@ -35,6 +31,7 @@ public class RetoTecnicoAuto {
     public void sheManagerToRegister()  {
         OnStage.theActor("Nany").wasAbleTo(FillOutForm.theForm());
         OnStage.theActor("Nany").attemptsTo(ClickNextLocation.nextButton());
+        OnStage.theActor("Nany").attemptsTo(StepTwoAddYourAddress.theFormTwo());
 
     }
 }
