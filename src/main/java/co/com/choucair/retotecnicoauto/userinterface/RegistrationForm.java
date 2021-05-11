@@ -17,9 +17,11 @@ public class RegistrationForm {
             .located(By.id("birthDay"));
     public static final Target BIRTH_YEAR = Target.the("Año de nacimiento")
             .located(By.id("birthYear"));
- /*   public static final Target lOCATION_CITY = Target.the("Tu ubicacion")
-            .located(By.id("zip"));
-*/
+   public static final Target lOCATION_CITY = Target.the("Tu ubicacion")
+            .located(By.id("city"));
+
+  public static final Target POSTAL_CODE = Target.the("Codigo Postal")
+          .located(By.id("zip"));
     }
 
 
