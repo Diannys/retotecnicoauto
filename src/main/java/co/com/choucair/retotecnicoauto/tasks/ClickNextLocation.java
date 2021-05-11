@@ -15,5 +15,6 @@ public class ClickNextLocation implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(NextButton.NEXT_LOCATION_BUTTON));
+
     }
 }

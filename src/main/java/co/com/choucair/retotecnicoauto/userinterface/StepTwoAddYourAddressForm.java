@@ -10,4 +10,6 @@ public class StepTwoAddYourAddressForm {
             .located(By.xpath("//span[contains(text(), 'Fonseca, La Guajira')]"));
     public static final Target POSTAL_CODE = Target.the("Codigo Postal")
             .located(By.id("zip"));
+    public static final Target NEXT_DEVICES = Target.the("Boton de siguiente Dispositivos")
+            .located(By.className("btn-blue"));
 }

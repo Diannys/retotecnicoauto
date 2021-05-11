@@ -18,5 +18,6 @@ public class StepTwoAddYourAddress implements Task {
         actor.attemptsTo(Enter.theValue("Fonseca, La Guajira").into(StepTwoAddYourAddressForm.lOCATION_CITY));
         actor.attemptsTo(Click.on(StepTwoAddYourAddressForm.FONSECA_CITY_OPTION));
         actor.attemptsTo(Enter.theValue("0000").into(StepTwoAddYourAddressForm.POSTAL_CODE));
+        actor.attemptsTo(Click.on(StepTwoAddYourAddressForm.NEXT_DEVICES));
     }
 }
