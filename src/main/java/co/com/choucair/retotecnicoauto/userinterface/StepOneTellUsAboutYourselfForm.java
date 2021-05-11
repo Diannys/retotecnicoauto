@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.actions.SelectFromOptions;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class RegistrationForm {
+public class StepOneTellUsAboutYourselfForm {
     public static final Target FIRST_NAME = Target.the("Primer Nombre")
             .located(By.id("firstName"));
     public static final Target LAST_NAME = Target.the("Primer Apellido")
@@ -17,6 +17,8 @@ public class RegistrationForm {
             .located(By.id("birthDay"));
     public static final Target BIRTH_YEAR = Target.the("Año de nacimiento")
             .located(By.id("birthYear"));
+    public static final Target NEXT_LOCATION_BUTTON = Target.the("Boton de siguiente localizacion")
+            .located(By.xpath("//span[contains(text(),'Next: Location')]"));
 
 
     }

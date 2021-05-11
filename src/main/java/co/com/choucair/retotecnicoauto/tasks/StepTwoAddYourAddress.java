@@ -1,6 +1,5 @@
 package co.com.choucair.retotecnicoauto.tasks;
 
-import co.com.choucair.retotecnicoauto.userinterface.RegistrationForm;
 import co.com.choucair.retotecnicoauto.userinterface.StepTwoAddYourAddressForm;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
