@@ -1,6 +1,7 @@
 package co.com.choucair.retotecnicoauto.stepdefinitions;
 
 import co.com.choucair.retotecnicoauto.tasks.ClickJoinToday;
+import co.com.choucair.retotecnicoauto.tasks.FillOutForm;
 import co.com.choucair.retotecnicoauto.tasks.OpenUp;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -30,6 +31,8 @@ public class RetoTecnicoAuto {
 
     @Then("she manager to register")
     public void sheManagerToRegister()  {
+        OnStage.theActor("Nany").wasAbleTo(FillOutForm.theForm());
+
 
     }
 }
