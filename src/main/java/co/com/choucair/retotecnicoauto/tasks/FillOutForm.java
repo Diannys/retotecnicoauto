@@ -29,6 +29,9 @@ public class FillOutForm implements Task {
         actor.attemptsTo(
                 SelectFromOptions.byVisibleText("1994").from(RegistrationForm.BIRTH_YEAR)
         );
-
+     /*   actor.attemptsTo(
+                SelectFromOptions.byVisibleText("Fonseca,La Guajira").from(RegistrationForm.lOCATION_CITY)
+        );
+*/
     }
 }

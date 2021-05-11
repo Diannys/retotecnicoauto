@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
 public class ClickNextLocation implements Task {
-    public static ClickNextLocation theButton(){
+    public static ClickNextLocation nextButton(){
         return Tasks.instrumented(ClickNextLocation.class);
     }
 
