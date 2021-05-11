@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
 public class StepTwoAddYourAddressForm {
-    public static final Target lOCATION_CITY = Target.the("Tu ubicacion")
+    public static final Target LOCATION_CITY = Target.the("Tu ubicacion")
             .located(By.id("city"));
     public static final Target FONSECA_CITY_OPTION = Target.the("Tu ubicacion")
             .located(By.xpath("//span[contains(text(), 'Fonseca, La Guajira')]"));

@@ -30,7 +30,6 @@ public class RetoTecnicoAuto {
     @Then("she manager to register")
     public void sheManagerToRegister()  {
         OnStage.theActor("Nany").wasAbleTo(FillOutForm.theForm());
-        OnStage.theActor("Nany").attemptsTo(ClickNextLocation.nextButton());
         OnStage.theActor("Nany").attemptsTo(StepTwoAddYourAddress.theFormTwo());
         OnStage.theActor("Nany").attemptsTo(StepThreeTellUsAboutYourDevices.theFormThree());
         OnStage.theActor("Nany").attemptsTo(StepFourTheLastStep.theFormFour());
