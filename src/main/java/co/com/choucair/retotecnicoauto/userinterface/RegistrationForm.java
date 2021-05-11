@@ -11,8 +11,12 @@ public class RegistrationForm {
             .located(By.id("lastName"));
    public static final Target YOUR_EMAIL = Target.the("Tu@correo")
             .located(By.id("email"));
- /*  public static final Target BIRTH_MONTH = Target.the("Fecha de nacimiento")
-           .located(By.xpath("//select[contains(text(),'Month')]"));
-   */ }
+   public static final Target BIRTH_MONTH = Target.the("Mes de nacimiento")
+           .located(By.id("birthMonth"));
+    public static final Target BIRTH_DAY = Target.the("Dia de nacimiento")
+            .located(By.id("birthDay"));
+    public static final Target BIRTH_YEAR = Target.the("Año de nacimiento")
+            .located(By.id("birthYear"));
+    }
 
 
