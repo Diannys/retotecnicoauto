@@ -14,6 +14,8 @@ public class StepThreeTellUsAboutYourDevices implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+        actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.YOUR_MOBILE_DEVICE_ICON));
+
         actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.YOUR_MOBILE_DEVICE_HUAWEI_OPTION));
 
         actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.MODEL_ICON));
