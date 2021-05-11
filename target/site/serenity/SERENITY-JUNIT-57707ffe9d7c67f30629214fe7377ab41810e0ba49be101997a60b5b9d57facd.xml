@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Technical challenge" skipped="0" tests="1" time="189.68" timestamp="2021-05-11 02:49:08"><testcase name="Search page to create user in uTest"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Technical challenge" skipped="0" tests="1" time="100.5" timestamp="2021-05-11 04:38:25"><testcase name="Search page to create user in uTest"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+co.com.choucair.retotecnicoauto.tasks.FillOutForm.performAs(FillOutForm.java:22)&#13;
+co.com.choucair.retotecnicoauto.stepdefinitions.RetoTecnicoAuto.sheManagerToRegister(RetoTecnicoAuto.java:34)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

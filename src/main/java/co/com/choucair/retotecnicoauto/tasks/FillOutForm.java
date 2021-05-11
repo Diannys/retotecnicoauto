@@ -18,5 +18,8 @@ public class FillOutForm implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Enter.theValue("llenar campo de nombre").into(RegistrationForm.FIRST_NAME));
         actor.attemptsTo(Enter.theValue("Escribe apellido").into(RegistrationForm.LAST_NAME));
+        actor.attemptsTo(Enter.theValue("dd@gmail.co").into(RegistrationForm.YOUR_EMAIL));
+    //    actor.attemptsTo(Enter.theValue("August").into(RegistrationForm.BIRTH_MONTH));
+
     }
 }
