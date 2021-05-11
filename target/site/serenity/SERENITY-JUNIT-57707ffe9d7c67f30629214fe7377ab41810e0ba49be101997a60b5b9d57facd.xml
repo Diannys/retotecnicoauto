@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Technical challenge" skipped="0" tests="1" time="8.12" timestamp="2021-05-10 08:53:37"><testcase name="Search page to create user in uTest"><error message="Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate class org.openqa.selenium.chrome.ChromeDriver</error><system-err>Could not instantiate class org.openqa.selenium.chrome.ChromeDriver&#13;
-co.com.choucair.retotecnicoauto.tasks.OpenUp.performAs(OpenUp.java:17)&#13;
-co.com.choucair.retotecnicoauto.stepdefinitions.RetoTecnicoAuto.ThanNanyWantsToRegisterInUTest(RetoTecnicoAuto.java:19)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Technical challenge" skipped="0" tests="1" time="83.01" timestamp="2021-05-10 11:26:10"><testcase name="Search page to create user in uTest"/></testsuite>
