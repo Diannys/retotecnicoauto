@@ -32,6 +32,7 @@ public class RetoTecnicoAuto {
         OnStage.theActor("Nany").wasAbleTo(FillOutForm.theForm());
         OnStage.theActor("Nany").attemptsTo(ClickNextLocation.nextButton());
         OnStage.theActor("Nany").attemptsTo(StepTwoAddYourAddress.theFormTwo());
+        OnStage.theActor("Nany").attemptsTo(StepThreeTellUsAboutYourDevices.theFormThree());
 
 
     }
