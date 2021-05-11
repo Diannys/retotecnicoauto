@@ -17,5 +17,6 @@ public class FillOutForm implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Enter.theValue("llenar campo de nombre").into(RegistrationForm.FIRST_NAME));
+        actor.attemptsTo(Enter.theValue("Escribe apellido").into(RegistrationForm.LAST_NAME));
     }
 }
