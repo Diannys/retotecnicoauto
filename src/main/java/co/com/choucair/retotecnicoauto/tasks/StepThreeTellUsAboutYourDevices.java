@@ -33,6 +33,5 @@ public class StepThreeTellUsAboutYourDevices implements Task {
         actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.OPERATING_SYSTEM_OPTION(registrationModel.getSystemOperative())));
 
         actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.NEXT_LAST_STEP_BUTTON));
-
     }
 }

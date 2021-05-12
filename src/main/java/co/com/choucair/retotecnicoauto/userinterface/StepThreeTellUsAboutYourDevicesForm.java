@@ -26,6 +26,4 @@ public class StepThreeTellUsAboutYourDevicesForm {
     public static final Target OPERATING_SYSTEM_OPTION  (String optionText){
         return Target.the("Opciones de sistema operativo del dispositivo").located(By.xpath("//div[contains(text(),'" + optionText + "')]"));
     }
-
-
 }

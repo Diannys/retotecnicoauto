@@ -6,7 +6,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions( features = "src/test/resources/features/retotecnicoauto.feature",
+@CucumberOptions( features = "src/test/resources/features/UserRegistrationUtestPage.feature",
                         tags = "@stories",
                         glue = "co.com.choucair.retotecnicoauto.stepdefinitions",
                         snippets = SnippetType.CAMELCASE)
