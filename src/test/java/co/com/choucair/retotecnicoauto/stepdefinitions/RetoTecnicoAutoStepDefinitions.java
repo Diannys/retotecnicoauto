@@ -11,10 +11,10 @@ import net.serenitybdd.screenplay.actors.OnlineCast;
 
 import java.util.List;
 
-public class RetoTecnicoAuto {
+public class RetoTecnicoAutoStepDefinitions {
 
     @Before
-    public void setStage(){
+    public void setStage() {
         OnStage.setTheStage(new OnlineCast());
     }
 
@@ -34,8 +34,13 @@ public class RetoTecnicoAuto {
     @Then("she manager to register")
     public void sheManagerToRegister(List<RegistrationModel> registrationModelList) throws Exception {
         OnStage.theActor("Nany").wasAbleTo(FillOutForm.theForm(registrationModelList.get(0)));
-        OnStage.theActor("Nany").attemptsTo(StepTwoAddYourAddress.theFormTwo());
+    }
+
+    @Then("she manager to register two step")
+    public void sheManagerToRegisterTwoStep (List<RegistrationModel> registrationModelsList) throws Exception {
+        OnStage.theActor("Nany").attemptsTo(StepTwoAddYourAddress.theFormTwo(registrationModelsList.get(0)));
         OnStage.theActor("Nany").attemptsTo(StepThreeTellUsAboutYourDevices.theFormThree());
         OnStage.theActor("Nany").attemptsTo(StepFourTheLastStep.theFormFour());
     }
+
 }

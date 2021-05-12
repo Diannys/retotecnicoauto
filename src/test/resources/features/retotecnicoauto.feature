@@ -11,3 +11,6 @@
     Then she manager to register
       |firstName | lastName | email | birthMonth | birthDay | birthYear |
       | Diannys  | Granadillo | ddgrana31@gmail.com | August | 30 | 1994 |
+    Then she manager to register two step
+      |cityLocation | postalCode |
+      | Fonseca, La Guajira | 0000 |
