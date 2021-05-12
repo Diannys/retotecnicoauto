@@ -36,7 +36,7 @@ public class RetoTecnicoAutoStepDefinitions {
         OnStage.theActor("Nany").wasAbleTo(FillOutForm.theForm(registrationModelList.get(0)));
         OnStage.theActor("Nany").attemptsTo(StepTwoAddYourAddress.theFormTwo(registrationModelList.get(0)));
         OnStage.theActor("Nany").attemptsTo(StepThreeTellUsAboutYourDevices.theFormThree());
-        OnStage.theActor("Nany").attemptsTo(StepFourTheLastStep.theFormFour());
+        OnStage.theActor("Nany").attemptsTo(StepFourTheLastStep.theFormFour(registrationModelList.get(0)));
     }
 
 }
