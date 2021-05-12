@@ -1,15 +1,15 @@
 package co.com.choucair.retotecnicoauto.tasks;
 
-import co.com.choucair.retotecnicoauto.userinterface.uTest;
+import co.com.choucair.retotecnicoauto.userinterface.uTestPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Open;
 
-public class OpenUp implements Task {
-    private uTest uTest;
-    public static OpenUp thePage() {
-        return Tasks.instrumented(OpenUp.class);
+public class OpenUpPage implements Task {
+    private uTestPage uTest;
+    public static OpenUpPage thePage() {
+        return Tasks.instrumented(OpenUpPage.class);
     }
 
     @Override

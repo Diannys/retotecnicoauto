@@ -1,7 +1,6 @@
 package co.com.choucair.retotecnicoauto.tasks;
 
 import co.com.choucair.retotecnicoauto.model.RegistrationModel;
-import co.com.choucair.retotecnicoauto.userinterface.NextButton;
 import co.com.choucair.retotecnicoauto.userinterface.StepOneTellUsAboutYourselfForm;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -10,15 +9,15 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
-public class FillOutForm implements Task {
+public class StepOneTellUsAboutYouself implements Task {
     public RegistrationModel registrationModel;
 
-    public FillOutForm(RegistrationModel registrationModel) {
+    public StepOneTellUsAboutYouself(RegistrationModel registrationModel) {
        this.registrationModel = registrationModel;
     }
 
-    public static FillOutForm theForm(RegistrationModel registrationModel) {
-        return Tasks.instrumented(FillOutForm.class, registrationModel);
+    public static StepOneTellUsAboutYouself theForm(RegistrationModel registrationModel) {
+        return Tasks.instrumented(StepOneTellUsAboutYouself.class, registrationModel);
     }
 
     @Override

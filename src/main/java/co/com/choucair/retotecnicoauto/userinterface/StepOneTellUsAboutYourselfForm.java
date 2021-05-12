@@ -18,7 +18,7 @@ public class StepOneTellUsAboutYourselfForm {
     public static final Target BIRTH_YEAR = Target.the("Año de nacimiento")
             .located(By.id("birthYear"));
     public static final Target NEXT_LOCATION_BUTTON = Target.the("Boton de siguiente localizacion")
-            .located(By.xpath("//span[contains(text(),'Next: Location')]"));
+            .located(By.className("btn-blue"));
 
 
     }
