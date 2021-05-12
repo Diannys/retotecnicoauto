@@ -11,7 +11,7 @@ import net.serenitybdd.screenplay.actors.OnlineCast;
 
 import java.util.List;
 
-public class RetoTecnicoAutoStepDefinitions {
+public class UserRegistrationUtestPageStepDefinitions {
 
     @Before
     public void setStage() {
@@ -34,7 +34,7 @@ public class RetoTecnicoAutoStepDefinitions {
     @Then("she manager to register")
     public void sheManagerToRegister(List<RegistrationModel> registrationModelList) throws Exception {
         RegistrationModel registrationModel = registrationModelList.get(0);
-        
+
         OnStage.theActor("Nany").wasAbleTo(StepOneTellUsAboutYouself.theForm(registrationModel));
         OnStage.theActor("Nany").attemptsTo(StepTwoAddYourAddress.theFormTwo(registrationModel));
         OnStage.theActor("Nany").attemptsTo(StepThreeTellUsAboutYourDevices.theFormThree(registrationModel));
