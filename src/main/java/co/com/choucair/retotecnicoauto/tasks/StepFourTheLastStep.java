@@ -20,8 +20,8 @@ public class StepFourTheLastStep implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.theValue().into(StepFourTheLastStepForm.CREATE_YOUR_PASSWORD));
-        actor.attemptsTo(Enter.theValue("Contraseña12345").into(StepFourTheLastStepForm.CONFIRM_PASSWORD));
+        actor.attemptsTo(Enter.theValue(registrationModel.getPassword()).into(StepFourTheLastStepForm.CREATE_YOUR_PASSWORD));
+        actor.attemptsTo(Enter.theValue(registrationModel.getPasswordConfirm()).into(StepFourTheLastStepForm.CONFIRM_PASSWORD));
         actor.attemptsTo(Click.on(StepFourTheLastStepForm.TERM_OF_USER_CHECK));
         actor.attemptsTo(Click.on(StepFourTheLastStepForm.PRIVACY_SECURITY_POLICY_CHECK));
         actor.attemptsTo(Click.on(StepFourTheLastStepForm.COMPLETE_SETUP_BUTTON));

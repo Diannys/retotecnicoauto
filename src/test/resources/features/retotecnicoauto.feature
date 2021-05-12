@@ -9,7 +9,7 @@
     When she search for the Join Today button on the uTest page and fill in all the requested fields
 
     Then she manager to register
-      |firstName | lastName | email | birthMonth | birthDay | birthYear | cityLocation | postalCode | password | passwordConfirm |
+      |firstName | lastName | email | birthMonth | birthDay | birthYear | cityLocation | postalCode | password | passwordConfirm | mobileOption | mobileModel | systemOperative |
       | Diannys  | Granadillo | ddgrana31@gmail.com | August | 30 | 1994 |   Fonseca, La Guajira | 0000 | Contraseña12345 | Contraseña12345 |
 
 
