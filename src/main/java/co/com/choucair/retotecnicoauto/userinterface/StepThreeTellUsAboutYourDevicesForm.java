@@ -9,18 +9,23 @@ public class StepThreeTellUsAboutYourDevicesForm {
 
     public static final Target MODEL_ICON = Target.the("Modelo del dispositivo")
             .located(By.cssSelector("div[name=handsetModelId] i.caret"));
-    public static final Target MODEL_IPHONE_OPTION = Target.the("Tu dispositivo mobil")
-            .located(By.xpath("//div[contains(text(), 'iPhone')]"));
+
     public static final Target OPERATING_SYSTEM_ICON = Target.the("Sistema aperativo")
             .located(By.cssSelector("div[name=handsetOSId] i.caret"));
-    public static final Target OPERATING_SYSTEM_IOS14_OPTION = Target.the("Tu dispositivo mobil")
-            .located(By.xpath("//div[contains(text(), 'iOS 14')]"));
+
     public static final Target NEXT_LAST_STEP_BUTTON = Target.the("Boton de siguiente Dispositivos")
             .located(By.className("btn-blue"));
 
 
     public static final Target YOUR_MOBILE_DEVICE_OPTION (String optionText){
-        return Target.the("Opciones").located(By.xpath("//div[contains(text(),'" + optionText + "')]"));
+        return Target.the("Opciones de dispositivos").located(By.xpath("//div[contains(text(),'" + optionText + "')]"));
     }
+    public static final Target MODEL_OPTION (String optionText){
+        return Target.the("Opciones de modelo de dispositivo").located(By.xpath("//div[contains(text(),'" + optionText + "')]"));
+    }
+    public static final Target OPERATING_SYSTEM_OPTION  (String optionText){
+        return Target.the("Opciones de sistema operativo del dispositivo").located(By.xpath("//div[contains(text(),'" + optionText + "')]"));
+    }
+
 
 }

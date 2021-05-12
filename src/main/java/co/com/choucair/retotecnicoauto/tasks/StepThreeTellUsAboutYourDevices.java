@@ -25,12 +25,12 @@ public class StepThreeTellUsAboutYourDevices implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.YOUR_MOBILE_DEVICE_ICON));
         actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.YOUR_MOBILE_DEVICE_OPTION(registrationModel.getMobileOption())));
-        
+
         actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.MODEL_ICON));
-        actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.MODEL_IPHONE_OPTION));
+        actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.MODEL_OPTION(registrationModel.getMobileModel())));
 
         actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.OPERATING_SYSTEM_ICON));
-        actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.OPERATING_SYSTEM_IOS14_OPTION));
+        actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.OPERATING_SYSTEM_OPTION(registrationModel.getSystemOperative())));
 
         actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.NEXT_LAST_STEP_BUTTON));
 
