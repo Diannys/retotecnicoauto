@@ -17,9 +17,8 @@ public class FillOutForm implements Task {
        this.registrationModel = registrationModel;
     }
 
-    public static FillOutForm theForm() {
-
-        return Tasks.instrumented(FillOutForm.class);
+    public static FillOutForm theForm(RegistrationModel registrationModel) {
+        return Tasks.instrumented(FillOutForm.class, registrationModel);
     }
 
     @Override

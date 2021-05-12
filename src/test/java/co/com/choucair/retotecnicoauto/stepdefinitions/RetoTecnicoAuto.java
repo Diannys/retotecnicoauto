@@ -32,8 +32,8 @@ public class RetoTecnicoAuto {
     }
 
     @Then("she manager to register")
-    public void sheManagerToRegister(List<RegistrationModel> registrationModel) throws Exception {
-        OnStage.theActor("Nany").wasAbleTo(FillOutForm.theForm());
+    public void sheManagerToRegister(List<RegistrationModel> registrationModelList) throws Exception {
+        OnStage.theActor("Nany").wasAbleTo(FillOutForm.theForm(registrationModelList.get(0)));
         OnStage.theActor("Nany").attemptsTo(StepTwoAddYourAddress.theFormTwo());
         OnStage.theActor("Nany").attemptsTo(StepThreeTellUsAboutYourDevices.theFormThree());
         OnStage.theActor("Nany").attemptsTo(StepFourTheLastStep.theFormFour());
