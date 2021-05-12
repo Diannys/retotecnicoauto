@@ -9,8 +9,7 @@
     When she search for the Join Today button on the uTest page and fill in all the requested fields
 
     Then she manager to register
-      |firstName | lastName | email | birthMonth | birthDay | birthYear |
-      | Diannys  | Granadillo | ddgrana31@gmail.com | August | 30 | 1994 |
-    Then she manager to register two step
-      |cityLocation | postalCode |
-      | Fonseca, La Guajira | 0000 |
+      |firstName | lastName | email | birthMonth | birthDay | birthYear | cityLocation | postalCode |
+      | Diannys  | Granadillo | ddgrana31@gmail.com | August | 30 | 1994 |   Fonseca, La Guajira | 0000 |
+
+

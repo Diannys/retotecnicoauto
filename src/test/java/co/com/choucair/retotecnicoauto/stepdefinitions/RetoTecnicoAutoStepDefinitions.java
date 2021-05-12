@@ -34,11 +34,7 @@ public class RetoTecnicoAutoStepDefinitions {
     @Then("she manager to register")
     public void sheManagerToRegister(List<RegistrationModel> registrationModelList) throws Exception {
         OnStage.theActor("Nany").wasAbleTo(FillOutForm.theForm(registrationModelList.get(0)));
-    }
-
-    @Then("she manager to register two step")
-    public void sheManagerToRegisterTwoStep (List<RegistrationModel> registrationModelsList) throws Exception {
-        OnStage.theActor("Nany").attemptsTo(StepTwoAddYourAddress.theFormTwo(registrationModelsList.get(0)));
+        OnStage.theActor("Nany").attemptsTo(StepTwoAddYourAddress.theFormTwo(registrationModelList.get(0)));
         OnStage.theActor("Nany").attemptsTo(StepThreeTellUsAboutYourDevices.theFormThree());
         OnStage.theActor("Nany").attemptsTo(StepFourTheLastStep.theFormFour());
     }
