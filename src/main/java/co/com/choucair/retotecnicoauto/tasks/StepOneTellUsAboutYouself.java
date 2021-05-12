@@ -34,7 +34,7 @@ public class StepOneTellUsAboutYouself implements Task {
         actor.attemptsTo(
                 SelectFromOptions.byVisibleText(registrationModel.getBirthYear()).from(StepOneTellUsAboutYourselfForm.BIRTH_YEAR)
         );
-        actor.attemptsTo(Click.on(NextButton.NEXT_LOCATION_BUTTON));
+        actor.attemptsTo(Click.on(StepOneTellUsAboutYourselfForm.NEXT_LOCATION_BUTTON));
 
     }
 }
