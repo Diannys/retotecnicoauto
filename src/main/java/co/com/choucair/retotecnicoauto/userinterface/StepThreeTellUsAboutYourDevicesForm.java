@@ -6,8 +6,7 @@ import org.openqa.selenium.By;
 public class StepThreeTellUsAboutYourDevicesForm {
     public static final Target YOUR_MOBILE_DEVICE_ICON = Target.the("Tu dispositivo mobil")
             .located(By.cssSelector("div[name=handsetMakerId] i.caret"));
-    public static final Target YOUR_MOBILE_DEVICE_HUAWEI_OPTION = Target.the("Tu dispositivo mobil")
-            .located(By.xpath("//div[contains(text(), 'Apple')]"));
+
     public static final Target MODEL_ICON = Target.the("Modelo del dispositivo")
             .located(By.cssSelector("div[name=handsetModelId] i.caret"));
     public static final Target MODEL_IPHONE_OPTION = Target.the("Tu dispositivo mobil")
@@ -20,5 +19,8 @@ public class StepThreeTellUsAboutYourDevicesForm {
             .located(By.className("btn-blue"));
 
 
+    public static final Target YOUR_MOBILE_DEVICE_OPTION (String optionText){
+        return Target.the("Opciones").located(By.xpath("//div[contains(text(),'" + optionText + "')]"));
+    }
 
 }

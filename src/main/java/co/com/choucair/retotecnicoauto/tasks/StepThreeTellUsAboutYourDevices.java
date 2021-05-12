@@ -1,6 +1,9 @@
 package co.com.choucair.retotecnicoauto.tasks;
 
+import co.com.choucair.retotecnicoauto.model.RegistrationModel;
 import co.com.choucair.retotecnicoauto.userinterface.StepThreeTellUsAboutYourDevicesForm;
+import net.bytebuddy.asm.Advice;
+import net.bytebuddy.implementation.bind.annotation.This;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
@@ -8,16 +11,21 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
 public class StepThreeTellUsAboutYourDevices implements Task {
-    public static StepThreeTellUsAboutYourDevices theFormThree() {
-        return Tasks.instrumented(StepThreeTellUsAboutYourDevices.class);
+    private RegistrationModel registrationModel;
+
+    public StepThreeTellUsAboutYourDevices(RegistrationModel registrationModel) {
+        this.registrationModel = registrationModel;
+    }
+
+    public static StepThreeTellUsAboutYourDevices theFormThree(RegistrationModel registrationModel) {
+        return Tasks.instrumented(StepThreeTellUsAboutYourDevices.class, registrationModel);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.YOUR_MOBILE_DEVICE_ICON));
-
-        actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.YOUR_MOBILE_DEVICE_HUAWEI_OPTION));
-
+        actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.YOUR_MOBILE_DEVICE_OPTION(registrationModel.getMobileOption())));
+        
         actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.MODEL_ICON));
         actor.attemptsTo(Click.on(StepThreeTellUsAboutYourDevicesForm.MODEL_IPHONE_OPTION));
 

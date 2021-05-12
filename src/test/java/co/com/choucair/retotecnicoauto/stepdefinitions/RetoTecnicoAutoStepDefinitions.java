@@ -33,10 +33,12 @@ public class RetoTecnicoAutoStepDefinitions {
 
     @Then("she manager to register")
     public void sheManagerToRegister(List<RegistrationModel> registrationModelList) throws Exception {
-        OnStage.theActor("Nany").wasAbleTo(StepOneTellUsAboutYouself.theForm(registrationModelList.get(0)));
-        OnStage.theActor("Nany").attemptsTo(StepTwoAddYourAddress.theFormTwo(registrationModelList.get(0)));
-        OnStage.theActor("Nany").attemptsTo(StepThreeTellUsAboutYourDevices.theFormThree());
-        OnStage.theActor("Nany").attemptsTo(StepFourTheLastStep.theFormFour(registrationModelList.get(0)));
+        RegistrationModel registrationModel = registrationModelList.get(0);
+        
+        OnStage.theActor("Nany").wasAbleTo(StepOneTellUsAboutYouself.theForm(registrationModel));
+        OnStage.theActor("Nany").attemptsTo(StepTwoAddYourAddress.theFormTwo(registrationModel));
+        OnStage.theActor("Nany").attemptsTo(StepThreeTellUsAboutYourDevices.theFormThree(registrationModel));
+        OnStage.theActor("Nany").attemptsTo(StepFourTheLastStep.theFormFour(registrationModel));
     }
 
 }
