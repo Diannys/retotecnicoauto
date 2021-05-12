@@ -1,5 +1,6 @@
 package co.com.choucair.retotecnicoauto.stepdefinitions;
 
+import co.com.choucair.retotecnicoauto.model.RegistrationModel;
 import co.com.choucair.retotecnicoauto.tasks.*;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -8,7 +9,10 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
+import java.util.List;
+
 public class RetoTecnicoAuto {
+
     @Before
     public void setStage(){
         OnStage.setTheStage(new OnlineCast());
@@ -28,7 +32,7 @@ public class RetoTecnicoAuto {
     }
 
     @Then("she manager to register")
-    public void sheManagerToRegister()  {
+    public void sheManagerToRegister(List<RegistrationModel> registrationModel) throws Exception {
         OnStage.theActor("Nany").wasAbleTo(FillOutForm.theForm());
         OnStage.theActor("Nany").attemptsTo(StepTwoAddYourAddress.theFormTwo());
         OnStage.theActor("Nany").attemptsTo(StepThreeTellUsAboutYourDevices.theFormThree());
